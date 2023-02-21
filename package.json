@@ -1,0 +1,46 @@
+{
+  "name": "appbeers",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.tsx",
+  "dependencies": {
+    "@progress/kendo-data-query": "1.6.0",
+    "@progress/kendo-drawing": "1.17.3",
+    "@progress/kendo-licensing": "latest",
+    "@progress/kendo-react-animation": "latest",
+    "@progress/kendo-react-buttons": "5.11.0",
+    "@progress/kendo-react-data-tools": "5.11.0",
+    "@progress/kendo-react-dateinputs": "5.11.0",
+    "@progress/kendo-react-dropdowns": "5.11.0",
+    "@progress/kendo-react-grid": "latest",
+    "@progress/kendo-react-inputs": "5.11.0",
+    "@progress/kendo-react-intl": "5.11.0",
+    "@progress/kendo-react-ripple": "5.11.0",
+    "@progress/kendo-react-treeview": "5.11.0",
+    "@progress/kendo-svg-icons": "1.4.0",
+    "@progress/kendo-theme-bootstrap": "6.1.0",
+    "@types/kendo-ui": "2023.1.0",
+    "csbbust": "1.0.1",
+    "react": "18.0.0",
+    "react-dom": "18.2.0",
+    "react-scripts": "4.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "typescript": "4.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
