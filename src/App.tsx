@@ -49,14 +49,15 @@ function App() {
     fetch(urlApi).then((response) => {
       response.json().then((responseData) => {
         allBeers = responseData.map(function (beer: any = [], i: number) {
-          // console.log(beer);
+          //console.log(beer);
 
           let dataBeers = {
             beerId: beer.id,
             beerName: beer.name,
             beerTagline: beer.tagline,
             beerAbv: beer.abv,
-            beerImgUrl: beer.image_url
+            beerImgUrl: beer.image_url,
+            beerDescription: beer.description
           };
           return dataBeers;
         });
@@ -105,7 +106,7 @@ function App() {
             />
           </span>
           <br />
-          <span>{showBeerDialog["beerTagline"]}</span>
+          <span>{showBeerDialog["beerDescription"]}</span>
         </p>
 
         <DialogActionsBar>
@@ -191,6 +192,7 @@ function App() {
         total={arrayBeers.length}
         pageable={true}
         onPageChange={pageChange}
+        resizable={true}
       >
         <GridToolbar>
           <span> Uniquement sup. à 8% d'alcool ?</span>
@@ -203,7 +205,7 @@ function App() {
             offLabel={"Non"}
           />
         </GridToolbar>
-        <GridColumn cell={commandCell} title="Détails" />
+        <GridColumn cell={commandCell} title="Détails" width="80px" />
         <GridColumn field="beerName" title="Marque" />
         <GridColumn field="beerTagline" title="Slogan" />
         <GridColumn field="beerAbv" title="Degré" />
